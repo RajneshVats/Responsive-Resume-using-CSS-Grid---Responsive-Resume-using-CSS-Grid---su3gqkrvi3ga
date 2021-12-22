@@ -13,15 +13,14 @@
     margin: 20px auto;
     display:grid;
     grid-template-columns: 300px 700px;
-    grid-template-rows: 1000px;
 }
-.left-section{
+.left-content{
     background-color: lightgrey;
     padding: 1rem;
+    
 }
-.right-section{
-    background-color: rgb(120, 175, 194);
-}
+
+
 .profile-img{
     display: block;
     margin: auto;
@@ -55,7 +54,7 @@
     text-align: centre;
     padding: 1rem;
 }
-.skill-title{
+.skill{
     font-size: 0.75rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -76,11 +75,12 @@
     height: 4px;
 
 }
-.right-section{
+.right-main-content{
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    background-color: lightslategray;
 
 }
 .right-title{
