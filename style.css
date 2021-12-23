@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -13,11 +14,13 @@
     margin: 20px auto;
     display:grid;
     grid-template-columns: 300px 700px;
+    border: 1px solid black;
     
 }
 .left-content{
     background-color: lightgrey;
     padding: 1rem;
+    grid-row: span 1/2;
     
     
 }
@@ -38,6 +41,7 @@
     padding: 0.8rem;
     text-align: center;
     text-transform: uppercase;
+
 }
 .designation{
     font-size: 1rem;
@@ -84,6 +88,7 @@
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: lightslategray;
+    grid-row: span 2/3;
     
 
 }
@@ -96,13 +101,32 @@
 
 
 }
+.right-section{
+    
+}
 
 
 @media only screen and (max-width:673px) {
     .main-content{
+       min-height: 1000px;;
+       grid-template-columns:repeat(1,1fr);
+    
        
-       grid-template-columns:repeat(1, 1fr);
         
+    }
+    
+}
+@media only screen and (min-width:674px){
+    .main-content{
+        
+        min-height: 1000px;
+        grid-template-columns:30% 70%;
+    }
+    
+}
+@media only screen and(min-width:1000px) {
+    .main-content{
+        grid-template-columns: 300px 700px;
     }
     
 }
